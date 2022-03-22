@@ -14,3 +14,4 @@ A generic security incident response playbook investigating and responding to po
 ## Mitigate
 ### If AWS is integrated with Okta SSO ([example](https://saml-doc.okta.com/SAML_Docs/How-to-Configure-SAML-2.0-for-Amazon-Web-Service.html?baseAdminUrl=https://rapid7-admin.okta.com&app=amazon_aws&instanceId=0oa197c2qafCHfvnH0h8))
 - [ ] Rotate IAM keys used for Okta SSO integration
+- [ ] Apply IP address allowlist rules to IAM policies used by IAM principals ([AWS guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_aws_deny-ip.html)) ([Okta IP allowlist](https://help.okta.com/en/prod/Content/Topics/Security/ip-address-allow-listing.htm))
