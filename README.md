@@ -1,5 +1,5 @@
 # Okta Incident Response Playbook
-A generic security incident response playbook investigating and responding to potential compromises of Okta's internal systems, in the context of a customer or partner of Okta that uses their platform.
+A generic security incident response playbook for investigating and responding to potential compromises of Okta's internal systems, in the context of a customer or partner of Okta that uses their platform.
 
 ## Investigate
 - [ ] Review "user.session.impersonation.grant" events in Okta System Logs for signs of unusual or unauthorized access
