@@ -5,10 +5,9 @@ A generic security incident response playbook for investigating and responding t
 - [ ] Review Okta System logs for unusual "Impersonation" events (user.session.impersonation.grant, user.session.impersonation.initiate)
 - [ ] Review Okta system logs for unusual "Reset Password" events (user.account.reset_password)
 - [ ] Review Okta System logs for unusual "Reset Multifactor" events (user.mfa.factor.update, system.mfa.factor.deactivate, user.mfa.attempt_bypass)
+- [ ] Search email system logs for notifications about "Reset Password" and "Reset Multifactor" events and correlate them with corresponding Okta events analyzed based on playbook steps listed above. 
+>*NOTE:* In the event an attacker was able to tamper with Okta's system logs, this will provide independent validation about when and for whom these events occurred.
 - [ ] Review Okta System logs for unusual changes to Multifactor Authentication policies that would make it easier for an attacker to persist access with compromised credentials (e.g. policy deletions, user exceptions, etc.)
-
->**TIP**
->Search your email system's logs for notifications about "Reset Password" and "Reset Multifactor" events and correlate them with corresponding Okta events analyzed based on playbook steps listed above. In the event an attacker was able to tamper with Okta's system logs, this will provide independent validation about when and for whom these events occurred.
 
 ### If AWS is integrated with Okta SSO ([example](https://saml-doc.okta.com/SAML_Docs/How-to-Configure-SAML-2.0-for-Amazon-Web-Service.html?baseAdminUrl=https://rapid7-admin.okta.com&app=amazon_aws&instanceId=0oa197c2qafCHfvnH0h8))
 - [ ] Identify all IAM Users and associated active IAM keys used for Okta SSO AWS integration
