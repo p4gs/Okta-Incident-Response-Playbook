@@ -3,6 +3,8 @@ A generic security incident response playbook investigating and responding to po
 
 ## Investigate
 - [ ] Review "user.session.impersonation.grant" events in Okta System Logs for signs of unusual or unauthorized access
+- [ ] Review Okta system logs for unusual "Reset Password" events
+- [ ] Review Okta System logs for unusual "Reset Multifactor" events
 - [ ] Review Okta System logs for unusual changes to Multifactor Authentication policies that would make it easier for an attacker to persist access with compromised credentials (e.g. policy deletions, user exceptions, etc.)
 
 ### If AWS is integrated with Okta SSO ([example](https://saml-doc.okta.com/SAML_Docs/How-to-Configure-SAML-2.0-for-Amazon-Web-Service.html?baseAdminUrl=https://rapid7-admin.okta.com&app=amazon_aws&instanceId=0oa197c2qafCHfvnH0h8))
